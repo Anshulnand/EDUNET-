@@ -1,54 +1,55 @@
-Image Generation using Stable Diffusion & ComfyUI
+# Image Generation using Stable Diffusion & ComfyUI
 
-Overview
+## 🚀 Overview
+This project demonstrates image generation using **Stable Diffusion** with **ComfyUI**. Three different prompts were used to generate unique and visually appealing images.
 
-This project demonstrates image generation using Stable Diffusion with ComfyUI. Three different prompts were used to generate unique images.
+---
 
-Setup Instructions
+## 🔧 Setup Instructions
+1. **Install ComfyUI** and ensure all dependencies are met.
+2. **Download Stable Diffusion model checkpoints (.safetensors)** and place them in the `checkpoints` folder.
+3. **Run ComfyUI** and load the provided workflow to start generating images.
 
-Install ComfyUI and ensure dependencies are met.
+---
 
-Download and place Stable Diffusion model checkpoints (.safetensors) in the checkpoints folder.
+## 🖼️ Generated Images & Prompts
 
-Run ComfyUI and load the provided workflow.
+### 🌆 Futuristic Cityscape
+- **Prompt:** _"A futuristic city skyline at sunset, with flying cars and glowing neon signs reflecting off glass skyscrapers."_
+- **Model Used:** `@runwayml/stable-diffusion-v1-5`
 
-Generated Images & Prompts
+### 📚 Antique Library
+- **Prompt:** _"An antique library with towering shelves filled with leather-bound books. An ancient chandelier hangs from the ceiling."_
+- **Model Used:** `dreamshaper_8.safetensors`
 
-Futuristic Cityscape
+### 🌿 Forest Stream
+- **Prompt:** _"A tranquil forest stream with sunlight filtering through tall trees, a wooden footbridge in the front, and a calm stream running through the middle."_
+- **Model Used:** `dreamshaper_8.safetensors`
 
-Prompt: "A futuristic city skyline at sunset, with flying cars and glowing neon signs reflecting off glass skyscrapers."
+---
 
-Model Used: @runwayml/stable-diffusion-v1-5
+## 🎨 How to Customize
+- **Modify prompts** in the `CLIP Text Encode (Prompt)` nodes.
+- **Adjust sampling steps & seed values** in the `KSampler` node.
+- **Save generated images** from the `Save Image` node.
 
-Antique Library
+---
 
-Prompt: "An antique library with towering shelves filled with leather-bound books. An ancient chandelier hangs from the ceiling."
-
-Model Used: dreamshaper_8.safetensors
-
-Forest Stream
-
-Prompt: "A tranquil forest stream with sunlight filtering through tall trees, a wooden foot bridge in the front, and a calm stream running through the middle."
-
-Model Used: dreamshaper_8.safetensors
-
-How to Customize
-
-Modify prompts in CLIP Text Encode (Prompt) nodes.
-
-Adjust sampling steps and seed values in the KSampler node.
-
-Save generated images from the Save Image node.
-
-Repository Structure
-
+## 📁 Repository Structure
+```
 📂 Image-Generation
-│── 📁 Snapshots   # Snapshots
-│── 📁 Images     # Generated images
-│── README.md     # Project details
+│── 📁 Snapshots   # Workflow snapshots
+│── 📁 Images      # Generated images
+│── README.md      # Project details
+```
 
-Acknowledgments
+---
 
-Stable Diffusion by CompVis
+## 🙌 Acknowledgments
+- **[Stable Diffusion](https://github.com/CompVis/stable-diffusion)** by CompVis.
+- **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** for workflow-based image generation.
 
-ComfyUI for workflow-based image generation
+---
+
+🔥 Happy Generating! 🚀
+
